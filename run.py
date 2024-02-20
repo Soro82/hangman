@@ -26,13 +26,21 @@ def validate_input(choice):
     """
     Check the user's input to ensure they enter a correct Menu option.
     """
-
-
+    try:
+        int_choice = int(choice)
+        if int_choice == 1:
+            play_game()
     
-    
-          
+    except ValueError:
+        print(f"Invalid data entered. Please choose a Menu Option.\n")
+            
 
-
-
+def play_game():
+    """
+    Displays the empty spaces for the word.
+    Displays the images.
+    """
+    print("Hello World.")
+    print("_ _ _ _ _")
 
 run_game()
