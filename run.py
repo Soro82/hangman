@@ -1,5 +1,56 @@
 import random
 
+HANGMANPICS = ['''
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ /    |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|\  |
+ / \  |
+      |
+=========''']
+
 def run_game():
     """
     Display the Welcome message and Menu Options and 
@@ -68,13 +119,16 @@ def play_game():
     """
     word_picked = pick_random_word()
     print_blank_word(word_picked)
+    print_images(0)
         
     print(word_picked)
     
+def print_images(i):
+    """
+    Print image for current state of game.
+    """
+    print(HANGMANPICS[i])
 
     
-
-
-
-
 run_game()
+
