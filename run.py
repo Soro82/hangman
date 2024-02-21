@@ -38,14 +38,26 @@ def validate_input(choice):
         print("Invalid data entered. Please choose a Menu Option.\n")
                    
 
+def pick_random_word():
+    words = ["horse", "donkey", "chicken", "monkey", "mouse"]
+    word_num = random.randint(0,4)
+    random_word = words[word_num]
+    return random_word
+
+
 def play_game():
     """
     Displays the empty spaces for the word.
     Displays the images.
     """
-    word_num = random.randint(0,10)
-    print(word_num)
+    word_picked = pick_random_word()
+    word_length = len(word_picked)
+    print(word_picked)
+    print(word_length)
     print("Hello World.")
     
-    
+
+
+
+
 run_game()
