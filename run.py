@@ -63,7 +63,7 @@ def run_game():
     print("1. Play Game")
     print("2. Rules")
     print("3. Exit Game\n")
-    print("Please choose a Menu Option")
+    print("Please choose a Menu Option.")
 
     menu_option = input("Enter 1, 2 or 3\n")
     validate_input(menu_option)
@@ -110,6 +110,28 @@ def print_blank_word(word_to_print):
         blank_word = blank_word+"_ "
 
     print(blank_word)
+    print(word_to_print)
+
+
+def ask_for_answer(word):
+    """
+    Ask the user for their answer.
+    Validate the answer given.
+    Check if the answer is correct.
+    """
+    answer = input("Please choose a letter\n")
+    print(answer)
+    check_answer(answer, word)
+
+
+def check_answer(user_answer, ran_word):
+    """
+    Check if the letter chosen by the user is in the word.
+    """
+    if user_answer in ran_word:
+        print("Correct")
+    else:
+        print("Incorrect")
 
 
 def play_game():
@@ -119,9 +141,9 @@ def play_game():
     """
     word_picked = pick_random_word()
     print_blank_word(word_picked)
-    print_images(0)
+    print_images(3)
+    ask_for_answer(word_picked)
         
-    print(word_picked)
     
 def print_images(i):
     """
