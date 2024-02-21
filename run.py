@@ -44,6 +44,9 @@ def pick_random_word():
     random_word = words[word_num]
     return random_word
 
+# def print_blank_word(word_to_print):
+
+
 
 def play_game():
     """
@@ -54,7 +57,11 @@ def play_game():
     word_length = len(word_picked)
     print(word_picked)
     print(word_length)
-    print("Hello World.")
+    blank_word = ""
+    for word in range(word_length):
+        blank_word = blank_word+"_ "
+    print(blank_word)
+
     
 
 
