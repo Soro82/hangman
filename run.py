@@ -29,14 +29,14 @@ def validate_input(choice):
         # elif menu_option == 2:
         #     display_rules()
         elif int_choice == 3:
-             quit()
-        else:
-            print("Invalid data entered. Please choose a Menu Option.")
-            run_game()
-    
+            quit()
+        # else:
+         #     print("Invalid data entered. Please choose a Menu Option.")
+         #     run_game()
+        
     except ValueError:
-        print(f"Invalid data entered. Please enter a number.\n")
-           
+        print("Invalid data entered. Please choose a Menu Option.\n")
+                   
 
 def play_game():
     """
