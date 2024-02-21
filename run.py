@@ -39,13 +39,26 @@ def validate_input(choice):
                    
 
 def pick_random_word():
+    """
+    Generate a random number and pick a random word from the words list.
+    """
     words = ["horse", "donkey", "chicken", "monkey", "mouse"]
     word_num = random.randint(0,4)
     random_word = words[word_num]
     return random_word
 
-# def print_blank_word(word_to_print):
 
+def print_blank_word(word_to_print):
+    """
+    Print a list of underscores for each letter in the word picked.
+    """
+    blank_word = ""
+    word_length = len(word_to_print)
+
+    for word in range(word_length):
+        blank_word = blank_word+"_ "
+
+    print(blank_word)
 
 
 def play_game():
@@ -54,13 +67,10 @@ def play_game():
     Displays the images.
     """
     word_picked = pick_random_word()
-    word_length = len(word_picked)
+    print_blank_word(word_picked)
+        
     print(word_picked)
-    print(word_length)
-    blank_word = ""
-    for word in range(word_length):
-        blank_word = blank_word+"_ "
-    print(blank_word)
+    
 
     
 
