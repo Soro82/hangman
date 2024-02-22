@@ -59,11 +59,14 @@ def run_game():
     print("##################")
     print("Welcome to Hangman")
     print("##################\n")
+
+    user_name = get_user_name()
+
     print("Menu Options:")
     print("1. Play Game")
     print("2. Rules")
     print("3. Exit Game\n")
-    print("Please choose a Menu Option.")
+    print(f"{user_name} Please choose a Menu Option.")
 
     while True:
         menu_option = input("Enter 1, 2 or 3\n")
@@ -80,6 +83,21 @@ def run_game():
         quit()
 
 
+def get_user_name():
+    """
+    Ask the user to enter their name.
+    Validate the name and return it.
+    """
+    while True:
+        name = input("Please enter your name\n").capitalize()
+
+        if name.isalpha() and len(name) > 1:
+            return name
+        else:
+            print("Your name must only contain letters")
+            print("and contain at least 2 letters.\n")
+
+
 def display_rules():
     """
     Prints the rules of the game.
@@ -94,7 +112,7 @@ def display_rules():
     6. The game is over when you get all the letters correct or
        the image of the man is complete.
           ''')
-    play_game()
+    run_game()
 
 def pick_random_word():
     """
@@ -127,7 +145,6 @@ def ask_for_answer(word):
     Check if the answer is correct.
     """
     answer = input("Please choose a letter\n")
-    print(answer)
     check_answer(answer, word)
 
 
@@ -148,6 +165,7 @@ def play_game():
     """
     word_picked = pick_random_word()
     print_blank_word(word_picked)
+
     print_images(3)
     ask_for_answer(word_picked)
         
