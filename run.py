@@ -57,7 +57,7 @@ HANGMANPICS = ['''
 def run_game():
     """
     Display the Welcome message and Menu Options and 
-    request user to choose a Menu Option.
+    request the user to enter their name.
     """
     print("##################")
     print("Welcome to Hangman")
@@ -71,6 +71,13 @@ def run_game():
     print("3. Exit Game\n")
     print(f"{user_name} Please choose a Menu Option.")
 
+    get_user_option()
+
+
+def get_user_option():
+    """
+    Ask the user to choose a menu option and called the required function.
+    """
     while True:
         menu_option = input("Enter 1, 2 or 3\n")
         if menu_option not in ("1","2","3"):
@@ -115,7 +122,8 @@ def display_rules():
     6. The game is over when you get all the letters correct or
        the image of the man is complete.
           ''')
-    run_game()
+    print("Please choose a Menu Option.")
+    get_user_option()
 
 def pick_random_word():
     """
