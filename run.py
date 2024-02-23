@@ -63,13 +63,13 @@ def run_game():
     print("Welcome to Hangman")
     print("##################\n")
 
-    user_name = get_user_name()
+    #user_name = get_user_name()
 
     print("Menu Options:")
     print("1. Play Game")
     print("2. Rules")
     print("3. Exit Game\n")
-    print(f"{user_name} Please choose a Menu Option.")
+    #print(f"{user_name} Please choose a Menu Option.")
 
     get_user_option()
 
@@ -129,7 +129,7 @@ def pick_random_word():
     """
     Generate a random number and pick a random word from the words list.
     """
-    words = ["horse", "donkey", "chicken", "monkey", "mouse"]
+    words = ["horse", "donkey", "camel", "monkey", "mouse"]
     word_num = random.randint(0,4)
     random_word = words[word_num]
     return random_word
@@ -169,9 +169,10 @@ def check_answer(user_answer, ran_word):
     Check if the letter chosen by the user is in the word.
     """
     if user_answer in ran_word:
-        print("Correct")
+        answer_index = ran_word.index(user_answer)
+        print(answer_index)# Delete this line
     else:
-        print("Incorrect")
+        print("Incorrect")# Delete this line
 
 
 def play_game():
