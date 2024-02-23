@@ -139,13 +139,13 @@ def print_blank_word(word_to_print):
     """
     Print a list of underscores for each letter in the word picked.
     """
-    blank_word = ""
+    blank_word = []
     word_length = len(word_to_print)
 
     for letter in range(word_length):
-        blank_word = blank_word+"_ "
+        blank_word.append("_ ")
 
-    print(blank_word)
+    print(*blank_word)
     print(word_to_print) # Delete this line
 
 
@@ -184,17 +184,16 @@ def show_answers(ans, ind, q_word):
     """
     Print the word including any correct answer given.
     """
-    bl_word = ""
+    bl_word = []
     word_length = len(q_word)
 
     for letter in range(word_length):
-        bl_word = bl_word+"_ "
+        bl_word.append("_ ")
 
-    word_list = list(bl_word)
-    word_list[ind] = ans
+    bl_word[ind] = ans
     
 
-    print(word_list)
+    print(*bl_word)
 
 
 def play_game():
