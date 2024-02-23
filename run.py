@@ -1,5 +1,8 @@
 import random
 
+
+# The Hangman Pictures were copied from 
+# https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c
 HANGMANPICS = ['''
   +---+
   |   |
@@ -138,14 +141,19 @@ def print_blank_word(word_to_print):
     print(word_to_print) # Delete this line
 
 
-def ask_for_answer(word):
+def ask_for_answer():
     """
     Ask the user for their answer.
     Validate the answer given.
     Check if the answer is correct.
     """
-    answer = input("Please choose a letter\n")
-    check_answer(answer, word)
+    while True:
+        answer = input("Please choose a letter\n").lower()
+
+        if answer.isalpha() and len(answer) == 1:
+            return answer
+        else:
+            print("Invalid entry. Please choose a single letter.\n")
 
 
 def check_answer(user_answer, ran_word):
@@ -167,7 +175,8 @@ def play_game():
     print_blank_word(word_picked)
 
     print_images(3)
-    ask_for_answer(word_picked)
+    user_ans = ask_for_answer()
+    check_answer(user_ans, word_picked)
         
     
 def print_images(i):
