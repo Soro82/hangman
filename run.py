@@ -142,7 +142,7 @@ def print_blank_word(word_to_print):
     blank_word = ""
     word_length = len(word_to_print)
 
-    for word in range(word_length):
+    for letter in range(word_length):
         blank_word = blank_word+"_ "
 
     print(blank_word)
@@ -168,11 +168,33 @@ def check_answer(user_answer, ran_word):
     """
     Check if the letter chosen by the user is in the word.
     """
+    # user_guesses = []
+    # if user_answer in user_guesses:
+    #     print("You have already tried this letter.")
+    #     user_answer = ask_for_answer()
+
     if user_answer in ran_word:
         answer_index = ran_word.index(user_answer)
-        print(answer_index)# Delete this line
+        show_answers(user_answer, answer_index, ran_word)# Delete this line
     else:
         print("Incorrect")# Delete this line
+
+
+def show_answers(ans, ind, q_word):
+    """
+    Print the word including any correct answer given.
+    """
+    bl_word = ""
+    word_length = len(q_word)
+
+    for letter in range(word_length):
+        bl_word = bl_word+"_ "
+
+    word_list = list(bl_word)
+    word_list[ind] = ans
+    
+
+    print(word_list)
 
 
 def play_game():
