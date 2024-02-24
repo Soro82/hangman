@@ -208,17 +208,14 @@ def play_game():
     prev_answers = []
     while lives > 0:
         print(f"You have {lives} lives left.")
-        answer = input("Please choose a letter.\n")
+        answer = ask_for_answer()
         if answer in prev_answers:
             print("YOu have already tried this letter.")
-            break
         else:
-            prev_answers.append(answer)        
+            prev_answers.append(answer)     
+            check_answer(answer, word_picked)   
             print(HANGMANPICS[lives])
         lives -=1
-
-    user_ans = ask_for_answer()
-    check_answer(user_ans, word_picked)
         
     
 run_game()
