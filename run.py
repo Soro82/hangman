@@ -166,21 +166,18 @@ def ask_for_answer():
             print("Invalid entry. Please choose a single letter.\n")
 
 
-def check_answer(user_answer, ran_word):
+def check_answer(user_answer, ran_word, pic_num):
     """
     Check if the letter chosen by the user is in the word.
     """
-    # user_guesses = []
-    # if user_answer in user_guesses:
-    #     print("You have already tried this letter.")
-    #     user_answer = ask_for_answer()
-
     if user_answer in ran_word:
         answer_index = ran_word.index(user_answer)
         blank_word[answer_index] = user_answer + " "
+        print("Correct. Good guess.\n")
         print(*blank_word)
     else:
-        print("Incorrect")# Delete this line
+        print("Incorrect")
+        print(HANGMANPICS[pic_num])
 
 
 def play_game():
@@ -200,8 +197,7 @@ def play_game():
             print("YOu have already tried this letter.")
         else:
             prev_answers.append(answer)     
-            check_answer(answer, word_picked)   
-            print(HANGMANPICS[lives])
+            check_answer(answer, word_picked, lives)   
             lives -=1
         
         
