@@ -54,6 +54,9 @@ HANGMANPICS = ['''
       |
 =========''']
 
+# Global Variables to use in multiple functions.
+blank_word = []
+
 def run_game():
     """
     Display the Welcome message and Menu Options and 
@@ -139,7 +142,6 @@ def print_blank_word(word_to_print):
     """
     Print a list of underscores for each letter in the word picked.
     """
-    blank_word = []
     word_length = len(word_to_print)
 
     for letter in range(word_length):
@@ -175,25 +177,18 @@ def check_answer(user_answer, ran_word):
 
     if user_answer in ran_word:
         answer_index = ran_word.index(user_answer)
-        show_answers(user_answer, answer_index, ran_word)# Delete this line
+        show_answers(user_answer, answer_index)# Delete this line
     else:
         print("Incorrect")# Delete this line
 
 
-def show_answers(ans, ind, q_word):
+def show_answers(ans, ind):
     """
     Print the word including any correct answer given.
     """
-    bl_word = []
-    word_length = len(q_word)
+    blank_word[ind] = ans + " "
 
-    for letter in range(word_length):
-        bl_word.append("_ ")
-
-    bl_word[ind] = ans
-    
-
-    print(*bl_word)
+    print(*blank_word)
 
 
 def play_game():
