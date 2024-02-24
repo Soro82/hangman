@@ -6,37 +6,9 @@ import random
 HANGMANPICS = ['''
   +---+
   |   |
-      |
-      |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-      |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
-  |   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
-  O   |
- /|   |
-      |
-      |
-=========''', '''
-  +---+
-  |   |
   O   |
  /|\  |
-      |
+ / \  |
       |
 =========''', '''
   +---+
@@ -50,7 +22,35 @@ HANGMANPICS = ['''
   |   |
   O   |
  /|\  |
- / \  |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+ /|   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+  |   |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+  O   |
+      |
+      |
+      |
+=========''', '''
+  +---+
+  |   |
+      |
+      |
+      |
       |
 =========''']
 
@@ -204,17 +204,22 @@ def play_game():
     word_picked = pick_random_word()
     print_blank_word(word_picked)
 
-    print_images(3)
+    lives = 6
+    prev_answers = []
+    while lives > 0:
+        print(f"You have {lives} lives left.")
+        answer = input("Please choose a letter.\n")
+        if answer in prev_answers:
+            print("YOu have already tried this letter.")
+            break
+        else:
+            prev_answers.append(answer)        
+            print(HANGMANPICS[lives])
+        lives -=1
+
     user_ans = ask_for_answer()
     check_answer(user_ans, word_picked)
         
-    
-def print_images(i):
-    """
-    Print image for current state of game.
-    """
-    print(HANGMANPICS[i])
-
     
 run_game()
 
