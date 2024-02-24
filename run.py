@@ -81,6 +81,7 @@ def get_user_option():
     """
     Ask the user to choose a menu option and called the required function.
     """
+    blank_word.clear()
     while True:
         menu_option = input("Enter 1, 2 or 3\n")
         if menu_option not in ("1","2","3"):
@@ -186,13 +187,24 @@ def play_game():
             if answer in word_picked:
                 answer_index = word_picked.index(answer)
                 blank_word[answer_index] = answer + " "
-                print("Correct. Good guess.\n")
                 print(*blank_word)
+                print("Correct. Good guess.\n")
+
+                # Check if word is complete.            
+                if "_ " not in blank_word:
+                    print("Congratulations. You won the game.")
+                    print("Why not try again.\n")
+                    get_user_option()
+                    
             else:
                 print("Incorrect")
                 print(HANGMANPICS[lives])
                 print(*blank_word)
                 lives -=1
+                if lives == 0:
+                    print("Game over. Why not try again.\n")
+                    get_user_option()
+        
 
     
 run_game()
