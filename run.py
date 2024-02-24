@@ -177,18 +177,10 @@ def check_answer(user_answer, ran_word):
 
     if user_answer in ran_word:
         answer_index = ran_word.index(user_answer)
-        show_answers(user_answer, answer_index)# Delete this line
+        blank_word[answer_index] = user_answer + " "
+        print(*blank_word)
     else:
         print("Incorrect")# Delete this line
-
-
-def show_answers(ans, ind):
-    """
-    Print the word including any correct answer given.
-    """
-    blank_word[ind] = ans + " "
-
-    print(*blank_word)
 
 
 def play_game():
