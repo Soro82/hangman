@@ -215,8 +215,10 @@ def play_game():
             prev_answers.append(answer)     
             check_answer(answer, word_picked)   
             print(HANGMANPICS[lives])
-        lives -=1
+            lives -=1
         
+        
+    print(prev_answers)
     
 run_game()
 
