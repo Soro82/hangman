@@ -121,7 +121,7 @@ def display_rules():
     The Rules of the game are:\n
     1. A word will be picked at random.
     2. An underscore will be displayed for each letter in the word.
-    3. You will have 6 chances to guess every letter in the word.
+    3. You will have 7 chances to guess each letter in the word.
     4. When you get a letter correct it will replace the underscore.
     5. When you get a letter incorrect a line will be added to the man.
     6. The game is over when you get all the letters correct or
@@ -158,7 +158,6 @@ def ask_for_answer():
     """
     Ask the user for their answer.
     Validate the answer given.
-    Check if the answer is correct.
     """
     while True:
         answer = input("Please choose a letter\n").lower()
@@ -172,6 +171,8 @@ def ask_for_answer():
 def play_game():
     """
     Displays the empty spaces for the word.
+    Tell the user how many lives they have left.
+    Check if the user previously tried their answer.
     Displays the images.
     """
     word_picked = pick_random_word()
@@ -182,11 +183,12 @@ def play_game():
     while lives > 0:
         print(f"You have {lives} lives left.")
         answer = ask_for_answer()
-        # Check if the answer given is correct.
+        # Check if the user previously tried their answer.
         if answer in prev_answers:
             print("YOu have already tried this letter.")
         else:
             prev_answers.append(answer)
+            # Check if the answer given is correct.
             if answer in word_picked:
                 answer_index = word_picked.index(answer)
                 blank_word[answer_index] = answer + " "
@@ -194,16 +196,18 @@ def play_game():
                 print()
                 print("Correct. Good guess.\n")
 
-                # Check if word is complete.
+                # Check if the word is complete.
                 if "_ " not in blank_word:
                     print("Congratulations. You won the game.")
                     print("Why not try again.\n")
                     get_user_option()
             else:
                 print("Incorrect")
+                # Display the relevant image to the user.
                 print(HANGMANPICS[lives - 1])
                 print(*blank_word)
                 lives -= 1
+                # Check if the user has used all their lives.
                 if lives == 0:
                     print("Game over. Why not try again.\n")
                     get_user_option()
