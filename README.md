@@ -11,9 +11,7 @@ The Hangman game is a Python command-line project. It is written in Python and d
 
 * [User Stories](#user-stories)
 * [Flowcharts](#flowcharts)
-* [Design](#design)
 * [Features](#features)
-* [Responsiveness](#responsiveness)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
