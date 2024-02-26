@@ -90,4 +90,92 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ## Features
 
-### Welcome Message
+### Get User's Name
+
+* Ask the user to enter their name.
+* Inform the user if they enter and invalid entry.
+
+![Get User's Name Screeshot](documentation/screenshots/username_validation.png)
+
+### Menu Options
+
+* Display Menu Options.
+* Display the User's Name.
+* Ask the user to choose a menu option.
+
+![Menu Options Screenshot](documentation/screenshots/menu_options.png)
+
+* Validate the Menu Option chosen by the user.
+
+![Menu Options Validation Screenshot](documentation/screenshots/menu_options_validation.png)
+
+### Display Rules
+
+![Display Rules Screenshot](documentation/screenshots/display_rules.png)
+
+### Start Game
+
+* Display underscores for each letter in the word.
+* Display the number of lives the user has left.
+
+![Display underscores Screenshot](documentation/screenshots/blank_word_and_lives.png)
+
+<details>
+<summary>### User Answers</summary>
+
+* Answer Validation
+
+![Answer Validation Screenshot](documentation/screenshots/answer_validation.png)
+
+* First Correct Answer
+
+![First Correct Answer Screenshot](documentation/screenshots/first_correct_answer.png)
+
+* Answer Tried Previously
+
+![Answer Tried Previously Screenshot](documentation/screenshots/previous_answer.png)
+
+* Second Correct Answer
+
+![Second Correct Answer Screenshot](documentation/screenshots/second_correct_answer.png)
+</details>
+
+<details>
+<summary>### Incorrect Answers</summary>
+
+* First Incorrect Answer
+
+![First Incorrect Answer](documentation/screenshots/incorrect_answers/first_incorrect_answer.png)
+
+* Second Incorrect Answer
+
+![Second Incorrect Answer](documentation/screenshots/incorrect_answers/second_incorrect_answer.png)
+
+* Third Incorrect Answer
+
+![Third Incorrect Answer](documentation/screenshots/incorrect_answers/third_incorrect_answer.png)
+
+* Fourth Incorrect Answer
+
+![Fourth Incorrect Answer](documentation/screenshots/incorrect_answers/fourth_incorrect_answer.png)
+
+* Fifth Incorrect Answer
+
+![Fifth Incorrect Answer](documentation/screenshots/incorrect_answers/fifth_incorrect_answer.png)
+
+* Sixth Incorrect Answer
+
+![Sixth Incorrect Answer](documentation/screenshots/incorrect_answers/sixth_incorrect_answer.png)
+
+</details>
+
+### Game Over
+
+* Final Correct Answer
+
+![Final Correct Answer Screenshot](documentation/screenshots/final_correct_answer.png)
+
+* Final Incorrect Answer
+
+![Final Incorrect Answer Screenshot](documentation/screenshots/incorrect_answers/last_incorrect_answer.png)
+
