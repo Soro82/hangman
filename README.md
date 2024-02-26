@@ -40,3 +40,6 @@ As a user I want to be able to:
 
 ## Flowcharts
 
+I used [Lucidchart](https://www.lucidchart.com/pages/) to create the flowcharts for my game. I found them really helpful in planning what functions I need for the game to work in the way that I wanted it to.
+
+
