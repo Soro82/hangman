@@ -11,6 +11,9 @@ The Hangman game is a Python command-line project. It is written in Python and d
 
 * [User Stories](#user-stories)
 * [Flowcharts](#flowcharts)
+   * [Run Game](#run-game)
+   * [Get User's Answer](#get-users-answer)
+   * [Play Game](#play-game)
 * [Features](#features)
 * [Testing](#testing)
 * [Deployment](#deployment)
@@ -36,6 +39,8 @@ As a user I want to be able to:
 * know when the game is over.
 * to choose to play again or exit the game.
 
+[Back to Top](#hangman)
+
 ## Flowcharts
 
 I used [Lucidchart](https://www.lucidchart.com/pages/) to create the flowcharts for my game. I found them really helpful in planning what functions I need for the game to work in the way that I wanted it to.
@@ -51,6 +56,8 @@ I created my first flowchart to plan out the basic operations of the game.
 
 ![Run Game Flowchart](documentation/flowcharts/run_game.png)
 
+[Back to Top](#hangman)
+
 ### Get User's Answer
 
 Next I created a flowchart to plan how to get the answer from the user and what to do with it.
@@ -65,6 +72,8 @@ Next I created a flowchart to plan how to get the answer from the user and what 
 
 ![Get User's Answer Flowchart](documentation/flowcharts/get_user_answer.png)
 
+[Back to Top](#hangman)
+
 ### Play Game
 
 At first I had a separate function to check the user's answer but I realized that I needed to do it in the same function that loops through the game so I created the play_game flowchart. Here I:
@@ -77,4 +86,8 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ![Play Game Flowchart](documentation/flowcharts/play_game.png)
 
+[Back to Top](#hangman)
 
+## Features
+
+### Welcome Message

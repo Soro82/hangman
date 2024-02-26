@@ -101,7 +101,7 @@ def get_user_option():
     while True:
         menu_option = input("Enter 1, 2 or 3\n")
         if menu_option not in ("1", "2", "3"):
-            print("Invalid data entered. Please choose a Menu Option.\n.")
+            print("Invalid data entered. Please choose a Menu Option.\n")
         else:
             break
 
