@@ -175,7 +175,7 @@ def play_game():
     word_picked = pick_random_word()
     print_blank_word(word_picked)
 
-    lives = 6
+    lives = 7
     prev_answers = []
     while lives > 0:
         print(f"You have {lives} lives left.")
@@ -188,6 +188,7 @@ def play_game():
                 answer_index = word_picked.index(answer)
                 blank_word[answer_index] = answer + " "
                 print(*blank_word)
+                print()
                 print("Correct. Good guess.\n")
 
                 # Check if word is complete.            
@@ -198,7 +199,7 @@ def play_game():
                     
             else:
                 print("Incorrect")
-                print(HANGMANPICS[lives])
+                print(HANGMANPICS[lives - 1])
                 print(*blank_word)
                 lives -=1
                 if lives == 0:
