@@ -10,7 +10,7 @@ The Hangman game is a Python command-line project. It is written in Python and d
 ## Table of Contents
 
 * [User Stories](#user-stories)
-* [Wireframes](#wireframes)
+* [Flowcharts](#flowcharts)
 * [Design](#design)
 * [Features](#features)
 * [Responsiveness](#responsiveness)
@@ -20,10 +20,23 @@ The Hangman game is a Python command-line project. It is written in Python and d
 
 ## User Stories
 
-* As a user I want to test my knowledge about the Fantasy Premier League Fantasy Football game.
-* As a user I want to be able to enter my name before I start the quiz.
-* As a user I want to be able to choose an answer from a selection of possible choices.
-* As a user I want to know if I got the question correct or incorrect.
-* As a user I want to know how many questions I got correct as I go through the questions.
-* As a user I want to know my total score at the end of the game.
-* As a user I want to be told how well I did and if I can improve.
+As a user I want to be able to:
+
+* enter my name before I start the game.
+* choose from a list of options.
+* start the game.
+* see the rules of the game.
+* Exit the game.
+* know how many letters are in the word to guess.
+* know how many lives I have left after each guess.
+* be told when I get an answer correct.
+* see my correct answers in their correct position in the word.
+* be told when I get an answer incorrect.
+* see an image of the hangman after each incorrect answer.
+* be told when I correctly guessed all the letters in the word.
+* know if I previously guessed the letter.
+* know when the game is over.
+* to choose to play again or exit the game.
+
+## Flowcharts
+
