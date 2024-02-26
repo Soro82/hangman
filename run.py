@@ -1,7 +1,7 @@
 import random
 
 
-# The Hangman Pictures were copied from 
+# The Hangman Pictures were copied from
 # https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c
 HANGMANPICS = ['''
   +---+
@@ -57,44 +57,25 @@ HANGMANPICS = ['''
 # Global Variables to use in multiple functions.
 blank_word = []
 
+
 def run_game():
     """
-    Display the Welcome message and Menu Options and 
+    Display the Welcome message and Menu Options and
     request the user to enter their name.
     """
     print("##################")
     print("Welcome to Hangman")
     print("##################\n")
 
-    #user_name = get_user_name()
+    user_name = get_user_name()
 
     print("Menu Options:")
     print("1. Play Game")
     print("2. Rules")
     print("3. Exit Game\n")
-    #print(f"{user_name} Please choose a Menu Option.")
+    print(f"{user_name} Please choose a Menu Option.")
 
     get_user_option()
-
-
-def get_user_option():
-    """
-    Ask the user to choose a menu option and called the required function.
-    """
-    blank_word.clear()
-    while True:
-        menu_option = input("Enter 1, 2 or 3\n")
-        if menu_option not in ("1","2","3"):
-            print("Invalid data entered. Please choose a Menu Option.\n.")
-        else:
-            break
-
-    if menu_option == "1":
-        play_game()
-    elif menu_option == "2":
-        display_rules()
-    elif menu_option == "3":
-        quit()
 
 
 def get_user_name():
@@ -110,6 +91,26 @@ def get_user_name():
         else:
             print("Your name must only contain letters")
             print("and contain at least 2 letters.\n")
+
+
+def get_user_option():
+    """
+    Ask the user to choose a menu option and called the required function.
+    """
+    blank_word.clear()
+    while True:
+        menu_option = input("Enter 1, 2 or 3\n")
+        if menu_option not in ("1", "2", "3"):
+            print("Invalid data entered. Please choose a Menu Option.\n.")
+        else:
+            break
+
+    if menu_option == "1":
+        play_game()
+    elif menu_option == "2":
+        display_rules()
+    elif menu_option == "3":
+        quit()
 
 
 def display_rules():
@@ -129,12 +130,13 @@ def display_rules():
     print("Please choose a Menu Option.")
     get_user_option()
 
+
 def pick_random_word():
     """
     Generate a random number and pick a random word from the words list.
     """
     words = ["horse", "donkey", "camel", "monkey", "mouse"]
-    word_num = random.randint(0,4)
+    word_num = random.randint(0, 4)
     random_word = words[word_num]
     return random_word
 
@@ -180,10 +182,11 @@ def play_game():
     while lives > 0:
         print(f"You have {lives} lives left.")
         answer = ask_for_answer()
+        # Check if the answer given is correct.
         if answer in prev_answers:
             print("YOu have already tried this letter.")
         else:
-            prev_answers.append(answer)     
+            prev_answers.append(answer)
             if answer in word_picked:
                 answer_index = word_picked.index(answer)
                 blank_word[answer_index] = answer + " "
@@ -191,22 +194,21 @@ def play_game():
                 print()
                 print("Correct. Good guess.\n")
 
-                # Check if word is complete.            
+                # Check if word is complete.
                 if "_ " not in blank_word:
                     print("Congratulations. You won the game.")
                     print("Why not try again.\n")
                     get_user_option()
-                    
             else:
                 print("Incorrect")
                 print(HANGMANPICS[lives - 1])
                 print(*blank_word)
-                lives -=1
+                lives -= 1
                 if lives == 0:
                     print("Game over. Why not try again.\n")
                     get_user_option()
-        
 
-    
+
 run_game()
+
 
