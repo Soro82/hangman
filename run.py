@@ -151,7 +151,6 @@ def print_blank_word(word_to_print):
         blank_word.append("_ ")
 
     print(*blank_word)
-    print(word_to_print) # Delete this line
 
 
 def ask_for_answer():
@@ -209,7 +208,9 @@ def play_game():
                 lives -= 1
                 # Check if the user has used all their lives.
                 if lives == 0:
+                    print()
                     print("Game over. Why not try again.\n")
+                    print("Please choose a Menu Option.")
                     get_user_option()
 
 
