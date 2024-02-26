@@ -1,31 +1,29 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Hangman
 
-Welcome USER_NAME,
+Click [here](https://hangman-soro82-05b97f95a765.herokuapp.com) for the live link.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+## Introduction
 
-## Reminders
+The Hangman game is a Python command-line project. It is written in Python and deployed using Heroku. A word is picked at random and the user has seven chances to guess the correct letters in the word. The word is displayed with an underscore in place of each letter in the word.If the user guesses a correct letter, the underscore for that letter is replaced with the letter. If the user guesses an incorrect letter, the next image of the hangman is displayed and the user is told how many lives they have left. 
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
 
-## Creating the Heroku app
+## Table of Contents
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+* [User Stories](#user-stories)
+* [Wireframes](#wireframes)
+* [Design](#design)
+* [Features](#features)
+* [Responsiveness](#responsiveness)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Credits](#credits)
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## User Stories
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+* As a user I want to test my knowledge about the Fantasy Premier League Fantasy Football game.
+* As a user I want to be able to enter my name before I start the quiz.
+* As a user I want to be able to choose an answer from a selection of possible choices.
+* As a user I want to know if I got the question correct or incorrect.
+* As a user I want to know how many questions I got correct as I go through the questions.
+* As a user I want to know my total score at the end of the game.
+* As a user I want to be told how well I did and if I can improve.
