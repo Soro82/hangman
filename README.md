@@ -15,6 +15,13 @@ The Hangman game is a Python command-line project. It is written in Python and d
    * [Get User's Answer](#get-users-answer)
    * [Play Game](#play-game)
 * [Features](#features)
+   * [Get User's Name](#get-users-name)
+   * [Menu Options](#menu-options)
+   * [Display Rules](#display-rules)
+   * [Start Game](#start-game)
+   * [User Answer](#user-answers)
+   * [Incorrect Answers](#incorrect-answers)
+   * [Game Over](#game-over)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Credits](#credits)
@@ -97,6 +104,8 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ![Get User's Name Screeshot](documentation/screenshots/username_validation.png)
 
+[Back to Top](#hangman)
+
 ### Menu Options
 
 * Display Menu Options.
@@ -109,9 +118,13 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ![Menu Options Validation Screenshot](documentation/screenshots/menu_options_validation.png)
 
+[Back to Top](#hangman)
+
 ### Display Rules
 
 ![Display Rules Screenshot](documentation/screenshots/display_rules.png)
+
+[Back to Top](#hangman)
 
 ### Start Game
 
@@ -120,8 +133,12 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ![Display underscores Screenshot](documentation/screenshots/blank_word_and_lives.png)
 
+[Back to Top](#hangman)
+
+### User Answers
+
 <details>
-<summary>### User Answers</summary>
+<summary>User Answers</summary>
 
 * Answer Validation
 
@@ -140,8 +157,10 @@ At first I had a separate function to check the user's answer but I realized tha
 ![Second Correct Answer Screenshot](documentation/screenshots/second_correct_answer.png)
 </details>
 
+### Incorrect Answers
+
 <details>
-<summary>### Incorrect Answers</summary>
+<summary>Incorrect Answers</summary>
 
 * First Incorrect Answer
 
@@ -179,3 +198,33 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ![Final Incorrect Answer Screenshot](documentation/screenshots/incorrect_answers/last_incorrect_answer.png)
 
+[Back to Top](#hangman)
+
+## Testing
+
+| Location | Test | Expected Result | Result |
+| :------: | :--: | :-------------: | :----: |
+| Enter User's Name | Enter a number | Inform user that it must be all letters | Passed |
+| Enter User's Name | Enter a single letter | Inform user that it must be at least 2 letters | Passed |
+| Enter User's Name | Enter numbers and letters | Inform user that it must be all letters | Passed |
+| Menu Options | Capitalize user's name | Display user's name capitalized | Passed |
+| Enter Menu Option | Enter a number greater than 3 | Inform user to enter 1, 2 or 3 | Passed |
+| Enter Menu Option | Enter letters | Inform user to enter 1, 2 or 3 | Passed |
+| Enter Menu Option | Enter numbers and letters | Inform user to enter 1, 2 or 3 | Passed |
+| Enter Menu Option | Enter a symbol | Inform user to enter 1, 2 or 3 | Passed |
+| Display Rules | | Rules are less than 80 characters wide | Passed |
+| Display Rules | | Ask the user to choose a menu option | Passed |
+| Display Rules | Enter a number greater than 3 | Inform user to enter 1, 2 or 3 | Passed |
+| Display Rules | Enter letters | Inform user to enter 1, 2 or 3 | Passed |
+| Display Rules | Enter numbers and letters | Inform user to enter 1, 2 or 3 | Passed |
+| Play Game | Generate random number between 0 and 9 | Random number generated | Passed |
+| Play Game | | get word from list using random number as index | Passed |
+| Play Game | Get length of random word | Print underscore for each letter in word | Passed |
+| Play Game | Enter a number | Inform user to enter a single letter | Passed |
+| Play Game | Enter 2 letters | Inform user to enter a single letter | Passed |
+| Play Game | Enter multiple letters | Inform user to enter a single letter | Passed |
+
+
+## Deployment
+
+## Credits
