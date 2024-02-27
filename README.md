@@ -269,14 +269,41 @@ At first I had a separate function to check the user's answer but I realized tha
 
 * The game was tested using Code Institute's Pep8 Python Validator
 
-![Pep8 Validator Results]()
+![Pep8 Validator Results](documentation/testing/pep8_validation.png)
 
 [Back to Top](#hangman)
 
 ## Deployment
 
+The game was deployed using [Heroku](https://www.heroku.com/) through the following steps.
+
+1. Log in to Heroku or create an account if necessary.
+2. Click on the button labeled "New" from the dashboard in the top right corner and select the "Create new app" option in the drop-down menu.
+3. Enter a unique name for the application and select the region you are in.
+4. Click on "create app".
+5. Navigate to the settings tab and locate the "Config Vars" section and click "Reveal config vars".
+6. To add a config var:
+   * In the "KEY" field:
+      * enter PORT in all capital letters.
+   * In the "VALUE" field:
+      * enter 8000 and click "Add".
+8. Scroll to the "Buildpacks" section and click "Add buildpack".
+9. Select Python and save changes.
+10. Add another buildpack and select Nodejs then save changes again.
+11. Ensure that the python buildpack is above the Nodejs buildpack.
+12. Navigate to the "Deploy" section by clicking the "Deploy" tab in the top navbar.
+13. Select "GitHub" as the deployment method and click "Connect to GitHub".
+14. Search for the GitHub repository name in the search bar.
+15. Click on "connect" to link the repository to Heroku.
+16. Scroll down and click on "Deploy Branch".
+17. Once the app is deployed, Heroku will notify you and provide a button to view the app.
+18. Click on "Enable Automatic Deploys" to rebuild the deployed app automatically every time you push to GitHub.
+
 [Back to Top](#hangman)
 
 ## Credits
+
+* I copied the images for game from https://gist.github.com/chrishorton/8510732aa9a80a03c829b09f12e20d9c.
+* I used Code Institute's Pep8 Python Validator https://pep8ci.herokuapp.com/ to validate the code.
 
 [Back to Top](#hangman)
