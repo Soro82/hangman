@@ -220,9 +220,30 @@ At first I had a separate function to check the user's answer but I realized tha
 | Play Game | Generate random number between 0 and 9 | Random number generated | Passed |
 | Play Game | | get word from list using random number as index | Passed |
 | Play Game | Get length of random word | Print underscore for each letter in word | Passed |
+| Play Game | Lives start at 7 | Display number of lives left | Passed |
 | Play Game | Enter a number | Inform user to enter a single letter | Passed |
 | Play Game | Enter 2 letters | Inform user to enter a single letter | Passed |
 | Play Game | Enter multiple letters | Inform user to enter a single letter | Passed |
+| Play Game | Enter numbers and letters | Inform user to enter a single letter | Passed |
+| Play Game | Enter a symbol | Inform user to enter a single letter | Passed |
+| Play Game | User enters a correct answer | Display user's answer in correct position | Passed |
+| Play Game | Enter a letter previously entered | Inform user letter was previously entered | Passed |
+| Play Game | User enters first incorrect answer | Display correct image | Passed |
+| Play Game | User enters incorrect answer | Number of lives reduce by 1 | Passed |
+| Play Game | User enters second incorrect answer | Display correct image | Passed |
+| Play Game | User enters third incorrect answer | Display correct image | Passed |
+| Play Game | User enters fourth incorrect answer | Display correct image | Passed |
+| Play Game | User enters fifth incorrect answer | Display correct image | Passed |
+| Play Game | User enters sixth incorrect answer | Display correct image | Passed |
+| Game Over | User enters last incorrect answer | Display correct image | Passed |
+| Game Over | User enters last incorrect answer | Inform user the game is over | Passed |
+| Game Over | User enters last incorrect answer | Ask user to choose a menu option | Passed |
+| Game Over | User enters last correct answer | Inform the user that they won | Passed |
+| Game Over | User enters last correct answer | Display all letters in correct positions | Passed |
+| Game Over | User enters last correct answer | Ask user to choose a menu option | Passed |
+| Game Over | User chooses menu option 1 | A new game starts | Passed |
+| Game Over | User chooses menu option 2 | The rules are displayed | Passed |
+| Game Over | User chooses menu option 3 | The program stops | Passed |
 
 
 ## Deployment
