@@ -245,7 +245,38 @@ At first I had a separate function to check the user's answer but I realized tha
 | Game Over | User chooses menu option 2 | The rules are displayed | Passed |
 | Game Over | User chooses menu option 3 | The program stops | Passed |
 
+[Back to Top](#hangman)
+
+### Bugs
+
+##### Fixed Bugs
+
+| Bug | Solution | Result |
+| :-: | :-------: | :----: |
+| Asks for user's name after displaying rules | Add function to get user's name | Fixed |
+| Images displaying in reverse order | Change order of images in list | Fixed |
+| Lives reducing when answer previously asked | Add if statement to while loop | Fixed |
+| Last image not displayed | Increase lives from 6 to 7 | Fixed |
+| Underscores displayed twice when game replayed | Clear blank_word in get_user_option function | Fixed |
+
+##### Unfixed Bugs
+
+* There are no unfixed bugs.
+
+[Back to Top](#hangman)
+
+### Validator Testing
+
+* The game was tested using Code Institute's Pep8 Python Validator
+
+![Pep8 Validator Results]()
+
+[Back to Top](#hangman)
 
 ## Deployment
 
+[Back to Top](#hangman)
+
 ## Credits
+
+[Back to Top](#hangman)

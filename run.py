@@ -135,7 +135,8 @@ def pick_random_word():
     """
     Generate a random number and pick a random word from the words list.
     """
-    words = ["horse", "donkey", "camel", "monkey", "mouse", "wolves", "lion", "shark", "whale"]
+    words = ["horse", "donkey", "camel", "monkey", "mouse", "wolves",
+              "lion", "shark", "whale"]
     word_num = random.randint(0, 8)
     random_word = words[word_num]
     return random_word
@@ -215,5 +216,3 @@ def play_game():
 
 
 run_game()
-
-
