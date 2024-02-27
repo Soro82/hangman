@@ -23,7 +23,11 @@ The Hangman game is a Python command-line project. It is written in Python and d
    * [Incorrect Answers](#incorrect-answers)
    * [Game Over](#game-over)
 * [Testing](#testing)
+   * [Bugs](#bugs)
+   * [Validation](#validator-testing)
 * [Deployment](#deployment)
+   * [Forking](#forking)
+   * [Cloning](#cloning)
 * [Credits](#credits)
 
 ## User Stories
@@ -298,6 +302,26 @@ The game was deployed using [Heroku](https://www.heroku.com/) through the follow
 16. Scroll down and click on "Deploy Branch".
 17. Once the app is deployed, Heroku will notify you and provide a button to view the app.
 18. Click on "Enable Automatic Deploys" to rebuild the deployed app automatically every time you push to GitHub.
+
+[Back to Top](#hangman)
+
+### Forking
+
+Forking is a way to make a copy of the original repository on your GitHub account to view and change without affecting the original repository.
+
+* Log in to GitHub and locate your GitHub Repository.
+* At the top of the Repository(under the main navigation) locate the "Fork" button.
+* Now you should have a copy of the original repository in your GitHub account.
+
+### Cloning
+
+* Log in to GitHub and locate the GitHub Repository.
+* Under the repository name click "Clone or download".
+* Click on the code button, select clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+* Open Git Bash.
+* Change the current working directory to the location where you want the cloned directory to be made.
+* Type git clone and then paste The URL copied in step 3.
+* Press Enter and your local clone will be created.
 
 [Back to Top](#hangman)
 
