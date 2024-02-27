@@ -303,6 +303,8 @@ The game was deployed using [Heroku](https://www.heroku.com/) through the follow
 17. Once the app is deployed, Heroku will notify you and provide a button to view the app.
 18. Click on "Enable Automatic Deploys" to rebuild the deployed app automatically every time you push to GitHub.
 
+Click [here](https://hangman-soro82-05b97f95a765.herokuapp.com) for the live link.
+
 [Back to Top](#hangman)
 
 ### Forking
