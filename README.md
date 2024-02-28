@@ -9,7 +9,9 @@ The Hangman game is a Python command-line project. It is written in Python and d
 
 ## Table of Contents
 
-* [User Stories](#user-stories)
+* [User Experience](#user-experience)
+   * [Project Goals](#project-goals)
+   * [User Stories](#user-stories)
 * [Flowcharts](#flowcharts)
    * [Run Game](#run-game)
    * [Get User's Answer](#get-users-answer)
@@ -30,7 +32,20 @@ The Hangman game is a Python command-line project. It is written in Python and d
    * [Cloning](#cloning)
 * [Credits](#credits)
 
-## User Stories
+## User Experience
+
+### Project Goals
+
+* To create a game that is easy and fun to use.
+* To provide feedback to the user when they enter invalid data.
+* To show the user where their correct answers are in the word.
+* To display images of the hangman at each stage of the game.
+* To inform the user of how many chances they have to guess the word.
+* To allow the user to view the rules of the game if they wish.
+* To congratulate the user when they win.
+* To allow the user to play again if they win or lose.
+
+### User Stories
 
 As a user I want to be able to:
 
