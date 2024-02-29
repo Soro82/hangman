@@ -25,6 +25,7 @@ The Hangman game is a Python command-line project. It is written in Python and d
    * [User Answer](#user-answers)
    * [Incorrect Answers](#incorrect-answers)
    * [Game Over](#game-over)
+   * [Future Features](#future-features)
 * [Testing](#testing)
    * [Bugs](#bugs)
    * [Validation](#validator-testing)
@@ -221,6 +222,11 @@ At first I had a separate function to check the user's answer but I realized tha
 * Final Incorrect Answer
 
 ![Final Incorrect Answer Screenshot](documentation/screenshots/incorrect_answers/last_incorrect_answer.png)
+
+### Future Features
+
+* To add a leader board
+* An option to choose a word from a particular category
 
 [Back to Top](#hangman)
 
