@@ -1,3 +1,4 @@
+# Used to generate random word from words list.
 import random
 
 
@@ -69,6 +70,7 @@ def run_game():
 
     user_name = get_user_name()
 
+    # Print the Menu Options to the user and include the user's name.
     print("Menu Options:")
     print("1. Play Game")
     print("2. Rules")
