@@ -9,6 +9,7 @@ The Hangman game is a Python command-line project. It is written in Python and d
 
 ## Table of Contents
 
+* [Purpose](#purpose)
 * [User Experience](#user-experience)
    * [Project Goals](#project-goals)
    * [User Stories](#user-stories)
@@ -31,6 +32,10 @@ The Hangman game is a Python command-line project. It is written in Python and d
    * [Forking](#forking)
    * [Cloning](#cloning)
 * [Credits](#credits)
+
+## Purpose
+
+The purpose of this project is to simulate the game Hangman using a command-line interface. It allows the user to guess letters in a randomly chosen word to try and complete the word before their lives run out (before the hangman is complete).
 
 ## User Experience
 
