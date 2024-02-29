@@ -110,6 +110,7 @@ def get_user_option():
     elif menu_option == "2":
         display_rules()
     elif menu_option == "3":
+        print("I hope you come back to play again soon.")
         quit()
 
 
@@ -118,17 +119,27 @@ def display_rules():
     Prints the rules of the game.
     """
     print('''
-    The Rules of the game are:\n
-    1. A word will be picked at random.
-    2. An underscore will be displayed for each letter in the word.
-    3. You will have 7 chances to guess each letter in the word.
-    4. When you get a letter correct it will replace the underscore.
-    5. When you get a letter incorrect a line will be added to the man.
-    6. The game is over when you get all the letters correct or
-       the image of the man is complete.
+The Rules of the game are:\n
+1. A word will be picked at random.
+2. An underscore will be displayed for each letter in the word.
+3. You will have 7 chances to guess each letter in the word.
+4. When you get a letter correct it will replace the underscore.
+5. When you get a letter incorrect a line will be added to the man.
+6. The game is over when you get all the letters correct or
+    the image of the man is complete.
           ''')
-    print("Please choose a Menu Option.")
+    print_menu_options()
     get_user_option()
+
+def print_menu_options():
+    """
+    Print the menu options to the user and ask them to choose one.
+    """
+    print("Menu Options:")
+    print("1. Play Game")
+    print("2. Rules")
+    print("3. Exit Game\n")
+    print("Please choose a Menu Option.")
 
 
 def pick_random_word():
@@ -200,6 +211,7 @@ def play_game():
                 if "_ " not in blank_word:
                     print("Congratulations. You won the game.")
                     print("Why not try again.\n")
+                    print_menu_options()
                     get_user_option()
             else:
                 print("Incorrect")
@@ -210,8 +222,9 @@ def play_game():
                 # Check if the user has used all their lives.
                 if lives == 0:
                     print()
-                    print("Game over. Why not try again.\n")
-                    print("Please choose a Menu Option.")
+                    print(f"Game over. The correct answer was {word_picked}.\n")
+                    print("Why not try again.\n")
+                    print_menu_options()
                     get_user_option()
 
 
