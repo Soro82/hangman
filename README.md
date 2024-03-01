@@ -142,7 +142,7 @@ At first I had a separate function to check the user's answer but I realized tha
 ### Get User's Name
 
 * Ask the user to enter their name.
-* Inform the user if they enter and invalid entry.
+* Inform the user if they enter an invalid entry.
 
 ![Get User's Name Screeshot](documentation/screenshots/username_validation.png)
 
