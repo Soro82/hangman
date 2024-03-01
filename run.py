@@ -198,7 +198,7 @@ def play_game():
         answer = ask_for_answer()
         # Check if the user previously tried their answer.
         if answer in prev_answers:
-            print("YOu have already tried this letter.")
+            print("You have already tried this letter.")
         else:
             prev_answers.append(answer)
             # Check if the answer given is correct.
