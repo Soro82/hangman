@@ -17,6 +17,7 @@ The Hangman game is a Python command-line project. It is written in Python and d
    * [Run Game](#run-game)
    * [Get User's Answer](#get-users-answer)
    * [Play Game](#play-game)
+* [Technologies Used](#technologies-used)
 * [Features](#features)
    * [Get User's Name](#get-users-name)
    * [Menu Options](#menu-options)
@@ -133,6 +134,9 @@ At first I had a separate function to check the user's answer but I realized tha
 * Heroku - to deploy the project.
 * Pep8 Python Linter - to validate the code.
 * Lucid Chart - to create the flowcharts for the project.
+
+[Back to Top](#hangman)
+
 ## Features
 
 ### Get User's Name
