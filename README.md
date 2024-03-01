@@ -301,6 +301,7 @@ At first I had a separate function to check the user's answer but I realized tha
 | Lives reducing when answer previously asked | Add if statement to while loop | Fixed |
 | Last image not displayed | Increase lives from 6 to 7 | Fixed |
 | Underscores displayed twice when game replayed | Clear blank_word in get_user_option function | Fixed |
+| Invalid escape sequence in last 4 images | Add extra backslash to each backslash | Fixed |
 
 ##### Unfixed Bugs
 
