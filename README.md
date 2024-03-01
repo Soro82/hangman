@@ -120,6 +120,19 @@ At first I had a separate function to check the user's answer but I realized tha
 
 [Back to Top](#hangman)
 
+## Technologies Used
+
+### Languages
+
+* Python, CSS, HTML
+
+### Programs/Frameworks
+
+* Visual Studio Code - IDE used to develop the project.
+* GitHub - to host the source code.
+* Heroku - to deploy the project.
+* Pep8 Python Linter - to validate the code.
+* Lucid Chart - to create the flowcharts for the project.
 ## Features
 
 ### Get User's Name
@@ -225,8 +238,8 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ### Future Features
 
-* To add a leader board
-* An option to choose a word from a particular category
+* To add a leader board.
+* An option to choose a word from a particular category.
 
 [Back to Top](#hangman)
 
@@ -306,7 +319,7 @@ At first I had a separate function to check the user's answer but I realized tha
 
 * I ran the code through the validator again and there were no errors as you can see from the following image:
 
-[Pep8 Validator Clear](documentation/testing/pep8_validation_clear.png)
+![Pep8 Validator Clear](documentation/testing/pep8_validation_clear.png)
 
 [Back to Top](#hangman)
 
