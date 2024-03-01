@@ -297,9 +297,16 @@ At first I had a separate function to check the user's answer but I realized tha
 
 ### Validator Testing
 
-* The game was tested using Code Institute's Pep8 Python Validator
+* The game was tested using Code Institute's Pep8 Python Validator.
+* As you can see from the image below I had a problem with the backslash in the last four images.
+* I added an extra backslash to each one and it removed the error.
+* I tested the game again to ensure this had no effect on the images when they were displayed during the game.
 
 ![Pep8 Validator Results](documentation/testing/pep8_validation.png)
+
+* I ran the code through the validator again and there were no errors as you can see from the following image:
+
+[Pep8 Validator Clear](documentation/testing/pep8_validation_clear.png)
 
 [Back to Top](#hangman)
 
